@@ -20,6 +20,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         messageInbox.delegate = self;
         messageInbox.dataSource = self;
         self.messageInbox.tableFooterView = UIView();
+        ServiceRest.getInboxMessage();
         // Do any additional setup after loading the view, typically from a nib.
 
     }
