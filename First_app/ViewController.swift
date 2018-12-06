@@ -22,7 +22,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.messageInbox.tableFooterView = UIView();
         ServiceRest.getInboxMessage();
         // Do any additional setup after loading the view, typically from a nib.
-
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,6 +32,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBAction func btnShare(_ sender: UIButton) {
         NSLog("share");
+    }
+    
+    
+    @IBAction func toggleButton(_ sender: UIButton) {
+        NSLog("share!!!");
+        let appDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
