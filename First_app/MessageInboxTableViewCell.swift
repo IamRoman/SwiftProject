@@ -10,6 +10,7 @@ import UIKit
 
 class MessageInboxTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var lableText: UILabel!
     @IBOutlet weak var avatar: UIImageView!
     
     override func awakeFromNib() {
@@ -56,5 +57,8 @@ class MessageInboxTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-
+    func setDataToRow(data: String) {
+        print(">>>>\(data)")
+        lableText.text = data
+    }
 }

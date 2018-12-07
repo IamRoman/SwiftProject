@@ -72,6 +72,7 @@
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                                 <connections>
+                                                    <outlet property="LableText" destination="opS-TR-R3q" id="1Yp-F1-Nu3"/>
                                                     <outlet property="avatar" destination="oR3-JR-nSc" id="4k5-kQ-BUl"/>
                                                 </connections>
                                             </tableViewCell>
@@ -143,6 +144,7 @@
                     <navigationItem key="navigationItem" id="ibX-4c-T0B"/>
                     <connections>
                         <outlet property="messageInbox" destination="zPr-wW-so1" id="IgV-bk-Cmw"/>
+                        <outlet property="tableView" destination="zPr-wW-so1" id="7s0-om-hTT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -156,15 +158,6 @@
                     <view key="view" contentMode="scaleToFill" id="YA2-BJ-Eiz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drawer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mi5-ZD-6Mt">
-                                <rect key="frame" x="139" y="205" width="55" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="fJ7-JF-rPp"/>
                     </view>

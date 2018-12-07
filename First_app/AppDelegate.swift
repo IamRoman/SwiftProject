@@ -25,11 +25,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let drawerSideNav = UINavigationController(rootViewController: drawerViewController)
         let centerNav = UINavigationController(rootViewController: centerViewController)
         
+        let screenWidth = UIScreen.main.bounds.width
+        
         centerContainer = MMDrawerController(center: centerNav, leftDrawerViewController: drawerSideNav)
         
         centerContainer!.openDrawerGestureModeMask = MMOpenDrawerGestureMode.all
         centerContainer!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.all
-
+        centerContainer!.maximumLeftDrawerWidth = screenWidth * 0.75
+        
         window!.rootViewController = centerContainer
         window!.makeKeyAndVisible()
         
