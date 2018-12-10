@@ -74,9 +74,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "messageInboxTableViewCell", for: indexPath) as! MessageInboxTableViewCell
-        cell.setDataToRow(data: "123")
         let item = items[indexPath.row]
-        cell.textLabel?.text = item.name
+        cell.setDataToRow(data: item)
         return cell
     }
     

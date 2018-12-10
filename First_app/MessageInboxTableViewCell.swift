@@ -57,8 +57,8 @@ class MessageInboxTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setDataToRow(data: String) {
+    func setDataToRow(data: Item) {
         print(">>>>\(data)")
-        lableText.text = data
+        lableText.text = data.name
     }
 }
