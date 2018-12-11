@@ -16,6 +16,7 @@
 		300487B22177320700F203A8 /* First_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300487B12177320700F203A8 /* First_appUITests.swift */; };
 		300487C0217758CC00F203A8 /* MessageInboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300487BF217758CC00F203A8 /* MessageInboxTableViewCell.swift */; };
 		3004D22221785F75007478C3 /* ServiceRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004D22121785F75007478C3 /* ServiceRest.swift */; };
+		3008618021BE9D4100AD7E5D /* RenderDrawerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3008617F21BE9D4100AD7E5D /* RenderDrawerRow.swift */; };
 		308F2BA621B91D600093ADD3 /* DrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308F2BA521B91D600093ADD3 /* DrawerController.swift */; };
 		308F2BB221B91EAF0093ADD3 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308F2BA921B91EAD0093ADD3 /* UIViewController+MMDrawerController.m */; };
 		308F2BB321B91EAF0093ADD3 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308F2BAB21B91EAE0093ADD3 /* MMDrawerController.m */; };
@@ -58,6 +59,7 @@
 		300487B32177320700F203A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		300487BF217758CC00F203A8 /* MessageInboxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInboxTableViewCell.swift; sourceTree = "<group>"; };
 		3004D22121785F75007478C3 /* ServiceRest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRest.swift; sourceTree = "<group>"; };
+		3008617F21BE9D4100AD7E5D /* RenderDrawerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderDrawerRow.swift; sourceTree = "<group>"; };
 		308F2BA521B91D600093ADD3 /* DrawerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerController.swift; sourceTree = "<group>"; };
 		308F2BA821B91EAD0093ADD3 /* First_app-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "First_app-Bridging-Header.h"; sourceTree = "<group>"; };
 		308F2BA921B91EAD0093ADD3 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				3004D22121785F75007478C3 /* ServiceRest.swift */,
 				308F2BA521B91D600093ADD3 /* DrawerController.swift */,
 				308F2BB821B935B40093ADD3 /* NavigationController.swift */,
+				3008617F21BE9D4100AD7E5D /* RenderDrawerRow.swift */,
 			);
 			path = First_app;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				300487C0217758CC00F203A8 /* MessageInboxTableViewCell.swift in Sources */,
+				3008618021BE9D4100AD7E5D /* RenderDrawerRow.swift in Sources */,
 				308F2BA621B91D600093ADD3 /* DrawerController.swift in Sources */,
 				308F2BB321B91EAF0093ADD3 /* MMDrawerController.m in Sources */,
 				300487942177320600F203A8 /* ViewController.swift in Sources */,

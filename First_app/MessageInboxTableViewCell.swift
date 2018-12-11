@@ -58,7 +58,7 @@ class MessageInboxTableViewCell: UITableViewCell {
     }
     
     func setDataToRow(data: Item) {
-        print(">>>>\(data)")
+//        print(">>>>\(data)")
         lableText.text = data.name
     }
 }
