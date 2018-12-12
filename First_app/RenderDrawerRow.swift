@@ -8,6 +8,33 @@
 
 import UIKit
 
+enum ColorPalette {
+    static let Selected = "#fff"
+    static let Unselected = "#000000"
+}
+
+extension UIImage {
+    func imageWithColor(color1: UIColor) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(self.size, false, self.scale)
+        color1.setFill()
+        
+        let context = UIGraphicsGetCurrentContext()
+        context?.translateBy(x: 0, y: self.size.height)
+        context?.scaleBy(x: 1.0, y: -1.0)
+        context?.setBlendMode(CGBlendMode.normal)
+        
+        let rect = CGRect(origin: .zero, size: CGSize(width: self.size.width, height: self.size.height))
+        context?.clip(to: rect, mask: self.cgImage!)
+        context?.fill(rect)
+        
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return newImage!
+    }
+}
+
+
 class RenderDrawerRow: UITableViewCell {
     
     @IBOutlet weak var rowImage: UIImageView!
@@ -20,13 +47,19 @@ class RenderDrawerRow: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        setTintColor(imageView: self.rowImage, color: "#92C7E4")
+    }
+    
+    func setTintColor(imageView: UIImageView, color: String) {
+        imageView.image = imageView.image!.withRenderingMode(.alwaysTemplate)
+        imageView.tintColor = ConvertationColors.hexStringToUIColor(hex: color)
     }
     
     func setDataForRow (data: ItemForDrawer)  {
-        print(">>>Drawer\(data.name)")
         self.rowName.text = data.name
+        self.rowImage.image = UIImage(named: data.icon)
     }
-
+    func setImageColor(colorHex: String) {
+        self.rowImage.image = self.rowImage.image?.imageWithColor(color1: UIColor.blue)
+    }
 }

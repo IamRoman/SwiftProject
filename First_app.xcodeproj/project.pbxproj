@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3004479D21BFBDC8006DD82F /* ConvertationColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004479C21BFBDC8006DD82F /* ConvertationColors.swift */; };
 		300487922177320600F203A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300487912177320600F203A8 /* AppDelegate.swift */; };
 		300487942177320600F203A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300487932177320600F203A8 /* ViewController.swift */; };
 		300487972177320600F203A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 300487952177320600F203A8 /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3004479C21BFBDC8006DD82F /* ConvertationColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertationColors.swift; sourceTree = "<group>"; };
 		3004878E2177320600F203A8 /* First_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = First_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		300487912177320600F203A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		300487932177320600F203A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3004479B21BFBD33006DD82F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3004479C21BFBDC8006DD82F /* ConvertationColors.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		300487852177320600F203A8 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +138,7 @@
 		300487902177320600F203A8 /* First_app */ = {
 			isa = PBXGroup;
 			children = (
+				3004479B21BFBD33006DD82F /* Helpers */,
 				308F2BA721B91E720093ADD3 /* DrawerSource */,
 				300487912177320600F203A8 /* AppDelegate.swift */,
 				300487932177320600F203A8 /* ViewController.swift */,
@@ -374,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				300487C0217758CC00F203A8 /* MessageInboxTableViewCell.swift in Sources */,
+				3004479D21BFBDC8006DD82F /* ConvertationColors.swift in Sources */,
 				3008618021BE9D4100AD7E5D /* RenderDrawerRow.swift in Sources */,
 				308F2BA621B91D600093ADD3 /* DrawerController.swift in Sources */,
 				308F2BB321B91EAF0093ADD3 /* MMDrawerController.m in Sources */,
