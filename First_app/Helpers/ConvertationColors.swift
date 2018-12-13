@@ -30,4 +30,8 @@ class ConvertationColors: NSObject {
             alpha: CGFloat(1.0)
         )
     }
+    static func setTintColor(imageView: UIImageView, color: String) {
+        imageView.image = imageView.image!.withRenderingMode(.alwaysTemplate)
+        imageView.tintColor = hexStringToUIColor(hex: color)
+    }
 }

@@ -1,20 +1,20 @@
 //
-//  MessageInboxTableViewCell.swift
+//  RenderMessageCell.swift
 //  First_app
 //
-//  Created by Roman IamRoman on 10/17/18.
+//  Created by Roman IamRoman on 12/13/18.
 //  Copyright © 2018 Roman IamRoman. All rights reserved.
 //
 
 import UIKit
 
-class MessageInboxTableViewCell: UITableViewCell {
+class RenderMessageCell: UITableViewCell {
 
     @IBOutlet weak var lableText: UILabel!
     @IBOutlet weak var avatar: UIImageView!
     
     override func awakeFromNib() {
-        super.awakeFromNib();
+        super.awakeFromNib()
         avatar.layer.borderWidth = 1;
         avatar.layer.borderColor = UIColor(red:0.25, green:0.74, blue:0.96, alpha:1.0).cgColor;
         avatar.layer.masksToBounds = false;
@@ -35,4 +35,5 @@ class MessageInboxTableViewCell: UITableViewCell {
     func setDataToRow(data: Item) {
         lableText.text = data.name
     }
+    
 }

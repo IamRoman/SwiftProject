@@ -47,13 +47,13 @@ class RenderDrawerRow: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        setTintColor(imageView: self.rowImage, color: "#92C7E4")
+        ConvertationColors.setTintColor(imageView: self.rowImage, color: "#43b7ff")
     }
     
-    func setTintColor(imageView: UIImageView, color: String) {
-        imageView.image = imageView.image!.withRenderingMode(.alwaysTemplate)
-        imageView.tintColor = ConvertationColors.hexStringToUIColor(hex: color)
-    }
+//    func setTintColor(imageView: UIImageView, color: String) {
+//        imageView.image = imageView.image!.withRenderingMode(.alwaysTemplate)
+//        imageView.tintColor = ConvertationColors.hexStringToUIColor(hex: color)
+//    }
     
     func setDataForRow (data: ItemForDrawer)  {
         self.rowName.text = data.name

@@ -7,7 +7,16 @@
 //
 
 import UIKit
-//import RealmSwift
+
+extension UINavigationController {
+    func replaceCurrentViewController(with viewController: UIViewController, animated: Bool) {
+        pushViewController(viewController, animated: animated)
+        let indexToRemove = viewControllers.count - 2
+        if indexToRemove >= 0 {
+            viewControllers.remove(at: indexToRemove)
+        }
+    }
+}
 
 enum Icons: String {
     case inbox_icon
@@ -44,15 +53,20 @@ class ItemForDrawer: NSObject {
 class DrawerController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var rowItems = [ItemForDrawer]();
+    var footerView: UIView!
     @IBOutlet weak var drawerTableView: UITableView!
     @IBOutlet weak var logoutView: UIView!
+    @IBOutlet weak var logoutIcon: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.checkAction))
         self.logoutView.addGestureRecognizer(gesture)
         self.navigationController?.setNavigationBarHidden(true, animated: false)
-        self.drawerTableView.tableFooterView = UIView()
+//        self.footerView.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        self.drawerTableView.tableFooterView = footerView
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+        ConvertationColors.setTintColor(imageView: self.logoutIcon, color: "#43b7ff")
 //        self.drawerTableView.select
         initialData()
     }
@@ -99,15 +113,20 @@ class DrawerController: UIViewController, UITableViewDelegate, UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print("You tapped cell number \(indexPath.row).")
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RenderDrawerRow", for: indexPath) as! RenderDrawerRow
-        cell.contentView.backgroundColor = UIColor.blue
-//        for i in 0 ..< rowItems.count {
-//            if i == indexPath.row {
-//                cell.setImageColor(colorHex: "#262626")
-//            } else {
-//                cell.setImageColor(colorHex: "#ffffff")
-//            }
-//        }
+        print("You tapped cell number \(indexPath.row).")
+        let secondViewController: UIViewController
+        switch indexPath.row {
+        case 0:
+            secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "InboxViewController") as! InboxViewController
+        case 1:
+            secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "SentViewController") as! SentViewController
+        case 2:
+            secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "DraftViewController") as! DraftViewController
+        case 3:
+            secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "SettingsViewController") as! SettingsViewController
+        default:
+           secondViewController = UIViewController()
+        }
+        Navigation.shared.pushViewController(viewController: secondViewController)
     }
 }
