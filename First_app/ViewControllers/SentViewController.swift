@@ -15,8 +15,6 @@ class SentViewController: UIViewController, UITableViewDelegate, UITableViewData
     var items: Results<Item>!
     @IBOutlet weak var tableSentMessage: UITableView!
     
-    var animals: [String] = ["Horse", "Cow", "Camel", "Sheep", "Goat"];
-    
     override func viewDidLoad() {
         super.viewDidLoad();
         items = realm.objects(Item.self)
