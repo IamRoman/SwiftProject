@@ -15,8 +15,18 @@
 		3004879C2177320700F203A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3004879A2177320700F203A8 /* LaunchScreen.storyboard */; };
 		300487A72177320700F203A8 /* First_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300487A62177320700F203A8 /* First_appTests.swift */; };
 		300487B22177320700F203A8 /* First_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300487B12177320700F203A8 /* First_appUITests.swift */; };
+		30049C4821C78F9700F76562 /* RenderSettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30049C4621C78F9700F76562 /* RenderSettingsCell.swift */; };
+		30049C4921C78F9700F76562 /* RenderSettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30049C4721C78F9700F76562 /* RenderSettingsCell.xib */; };
+		30049C4B21C79C0F00F76562 /* ItemWithIconAndText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30049C4A21C79C0F00F76562 /* ItemWithIconAndText.swift */; };
+		30049C4D21C79CBE00F76562 /* ItemForDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30049C4C21C79CBE00F76562 /* ItemForDrawer.swift */; };
+		30049C5021C7D3CC00F76562 /* RenderSettingsCellWithBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30049C4E21C7D3CC00F76562 /* RenderSettingsCellWithBorder.swift */; };
+		30049C5121C7D3CC00F76562 /* RenderSettingsCellWithBorder.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30049C4F21C7D3CC00F76562 /* RenderSettingsCellWithBorder.xib */; };
+		30049C5321C7D98600F76562 /* HelpersForNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30049C5221C7D98600F76562 /* HelpersForNavigation.swift */; };
+		30049C5621C7EAB800F76562 /* RenderSettingsSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30049C5421C7EAB800F76562 /* RenderSettingsSwitchCell.swift */; };
+		30049C5721C7EAB800F76562 /* RenderSettingsSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30049C5521C7EAB800F76562 /* RenderSettingsSwitchCell.xib */; };
 		3004D22221785F75007478C3 /* ServiceRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004D22121785F75007478C3 /* ServiceRest.swift */; };
 		3008618021BE9D4100AD7E5D /* RenderDrawerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3008617F21BE9D4100AD7E5D /* RenderDrawerRow.swift */; };
+		300AAE5521C3F7E70059B902 /* HelpersForUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300AAE5421C3F7E70059B902 /* HelpersForUIView.swift */; };
 		301777D121C13D410015A2C5 /* SentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301777D021C13D410015A2C5 /* SentViewController.swift */; };
 		301777D321C13D550015A2C5 /* DraftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301777D221C13D550015A2C5 /* DraftViewController.swift */; };
 		301777D521C13D690015A2C5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301777D421C13D690015A2C5 /* SettingsViewController.swift */; };
@@ -65,8 +75,18 @@
 		300487AD2177320700F203A8 /* First_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = First_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		300487B12177320700F203A8 /* First_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = First_appUITests.swift; sourceTree = "<group>"; };
 		300487B32177320700F203A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30049C4621C78F9700F76562 /* RenderSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderSettingsCell.swift; sourceTree = "<group>"; };
+		30049C4721C78F9700F76562 /* RenderSettingsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RenderSettingsCell.xib; sourceTree = "<group>"; };
+		30049C4A21C79C0F00F76562 /* ItemWithIconAndText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemWithIconAndText.swift; sourceTree = "<group>"; };
+		30049C4C21C79CBE00F76562 /* ItemForDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemForDrawer.swift; sourceTree = "<group>"; };
+		30049C4E21C7D3CC00F76562 /* RenderSettingsCellWithBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderSettingsCellWithBorder.swift; sourceTree = "<group>"; };
+		30049C4F21C7D3CC00F76562 /* RenderSettingsCellWithBorder.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RenderSettingsCellWithBorder.xib; sourceTree = "<group>"; };
+		30049C5221C7D98600F76562 /* HelpersForNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpersForNavigation.swift; sourceTree = "<group>"; };
+		30049C5421C7EAB800F76562 /* RenderSettingsSwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderSettingsSwitchCell.swift; sourceTree = "<group>"; };
+		30049C5521C7EAB800F76562 /* RenderSettingsSwitchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RenderSettingsSwitchCell.xib; sourceTree = "<group>"; };
 		3004D22121785F75007478C3 /* ServiceRest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRest.swift; sourceTree = "<group>"; };
 		3008617F21BE9D4100AD7E5D /* RenderDrawerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderDrawerRow.swift; sourceTree = "<group>"; };
+		300AAE5421C3F7E70059B902 /* HelpersForUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpersForUIView.swift; sourceTree = "<group>"; };
 		301777D021C13D410015A2C5 /* SentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentViewController.swift; sourceTree = "<group>"; };
 		301777D221C13D550015A2C5 /* DraftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftViewController.swift; sourceTree = "<group>"; };
 		301777D421C13D690015A2C5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				3004479C21BFBDC8006DD82F /* ConvertationColors.swift */,
+				300AAE5421C3F7E70059B902 /* HelpersForUIView.swift */,
+				30049C5221C7D98600F76562 /* HelpersForNavigation.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -210,6 +232,12 @@
 				3078F0EC21C2856A0064600A /* RenderMessageCell.swift */,
 				3078F0ED21C2856A0064600A /* RenderMessageCell.xib */,
 				3008617F21BE9D4100AD7E5D /* RenderDrawerRow.swift */,
+				30049C4621C78F9700F76562 /* RenderSettingsCell.swift */,
+				30049C4721C78F9700F76562 /* RenderSettingsCell.xib */,
+				30049C4E21C7D3CC00F76562 /* RenderSettingsCellWithBorder.swift */,
+				30049C4F21C7D3CC00F76562 /* RenderSettingsCellWithBorder.xib */,
+				30049C5421C7EAB800F76562 /* RenderSettingsSwitchCell.swift */,
+				30049C5521C7EAB800F76562 /* RenderSettingsSwitchCell.xib */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -227,6 +255,8 @@
 			isa = PBXGroup;
 			children = (
 				3078F0F521C2B2020064600A /* Item.swift */,
+				30049C4A21C79C0F00F76562 /* ItemWithIconAndText.swift */,
+				30049C4C21C79CBE00F76562 /* ItemForDrawer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -374,7 +404,10 @@
 			files = (
 				3004879C2177320700F203A8 /* LaunchScreen.storyboard in Resources */,
 				300487992177320700F203A8 /* Assets.xcassets in Resources */,
+				30049C5121C7D3CC00F76562 /* RenderSettingsCellWithBorder.xib in Resources */,
 				300487972177320600F203A8 /* Main.storyboard in Resources */,
+				30049C5721C7EAB800F76562 /* RenderSettingsSwitchCell.xib in Resources */,
+				30049C4921C78F9700F76562 /* RenderSettingsCell.xib in Resources */,
 				3078F0EF21C2856A0064600A /* RenderMessageCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,19 +480,26 @@
 				3008618021BE9D4100AD7E5D /* RenderDrawerRow.swift in Sources */,
 				308F2BA621B91D600093ADD3 /* DrawerController.swift in Sources */,
 				301777D321C13D550015A2C5 /* DraftViewController.swift in Sources */,
+				30049C4821C78F9700F76562 /* RenderSettingsCell.swift in Sources */,
 				308F2BB321B91EAF0093ADD3 /* MMDrawerController.m in Sources */,
 				300487942177320600F203A8 /* InboxViewController.swift in Sources */,
 				3078F0F621C2B2020064600A /* Item.swift in Sources */,
+				30049C4B21C79C0F00F76562 /* ItemWithIconAndText.swift in Sources */,
 				308F2BB521B91EAF0093ADD3 /* MMDrawerBarButtonItem.m in Sources */,
 				301777D521C13D690015A2C5 /* SettingsViewController.swift in Sources */,
 				301777D121C13D410015A2C5 /* SentViewController.swift in Sources */,
+				30049C5621C7EAB800F76562 /* RenderSettingsSwitchCell.swift in Sources */,
 				308F2BB421B91EAF0093ADD3 /* MMDrawerVisualState.m in Sources */,
 				301777D721C144370015A2C5 /* Navigation.swift in Sources */,
 				308F2BB221B91EAF0093ADD3 /* UIViewController+MMDrawerController.m in Sources */,
 				308F2BB921B935B40093ADD3 /* NavigationController.swift in Sources */,
 				300487922177320600F203A8 /* AppDelegate.swift in Sources */,
+				30049C5321C7D98600F76562 /* HelpersForNavigation.swift in Sources */,
 				3004D22221785F75007478C3 /* ServiceRest.swift in Sources */,
+				300AAE5521C3F7E70059B902 /* HelpersForUIView.swift in Sources */,
 				3078F0EE21C2856A0064600A /* RenderMessageCell.swift in Sources */,
+				30049C5021C7D3CC00F76562 /* RenderSettingsCellWithBorder.swift in Sources */,
+				30049C4D21C79CBE00F76562 /* ItemForDrawer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,16 +8,6 @@
 
 import UIKit
 
-extension UINavigationController {
-    func replaceCurrentViewController(with viewController: UIViewController, animated: Bool) {
-        pushViewController(viewController, animated: animated)
-        let indexToRemove = viewControllers.count - 2
-        if indexToRemove >= 0 {
-            viewControllers.remove(at: indexToRemove)
-        }
-    }
-}
-
 enum Icons: String {
     case inbox_icon
     case sent_icon
@@ -32,42 +22,26 @@ enum Items: String {
     case Settings
 }
 
-class ItemForDrawer: NSObject {
-    var name: String = ""
-    var icon: String = ""
-    var isSelected: Bool = false
-    
-    init(name: String, icon: String, isSelected: Bool) {
-        self.name = name
-        self.icon = icon
-        self.isSelected = isSelected
-    }
-    func printValue() {
-        print(">>>\(self.name), >>>\(self.icon), >>>\(self.isSelected)")
-    }
-    func setSelectedFlag(isSelected: Bool) {
-        self.isSelected = isSelected
-    }
-}
-
 class DrawerController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var rowItems = [ItemForDrawer]();
-    var footerView: UIView!
     @IBOutlet weak var drawerTableView: UITableView!
     @IBOutlet weak var logoutView: UIView!
     @IBOutlet weak var logoutIcon: UIImageView!
+    @IBOutlet weak var avatarImage: UIImageView!
+    @IBOutlet weak var userName: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.checkAction))
         self.logoutView.addGestureRecognizer(gesture)
         self.navigationController?.setNavigationBarHidden(true, animated: false)
-//        self.footerView.backgroundColor = UIColor.black.withAlphaComponent(0.5)
-        self.drawerTableView.tableFooterView = footerView
+        self.drawerTableView.tableFooterView = UIView()
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         ConvertationColors.setTintColor(imageView: self.logoutIcon, color: "#43b7ff")
-//        self.drawerTableView.select
+        HelpersForUIView.setCircleBorder(image: avatarImage)
+        
+        logoutView.layer.addBorder(edge: [.top], color: UIColor.white, thickness: 1.5)
         initialData()
     }
     

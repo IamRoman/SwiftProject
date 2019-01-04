@@ -15,11 +15,7 @@ class RenderMessageCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        avatar.layer.borderWidth = 1;
-        avatar.layer.borderColor = UIColor(red:0.25, green:0.74, blue:0.96, alpha:1.0).cgColor;
-        avatar.layer.masksToBounds = false;
-        avatar.layer.cornerRadius = avatar.frame.height/2;
-        avatar.clipsToBounds = true;
+        HelpersForUIView.setCircleBorder(image: avatar)
         
         let screenSize = UIScreen.main.bounds
         let separatorHeight = CGFloat(3.0)
