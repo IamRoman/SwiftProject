@@ -74,26 +74,24 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
             let item = rowItems[indexPath.row]
             cell.setDataToRow(data: item)
             return cell
-        } else if indexPath.row == 6 {
+        } else if indexPath.row == 6 || indexPath.row == 8 {
             let cell = Bundle.main.loadNibNamed("RenderSettingsCellWithBorder", owner: self, options: nil)?.first as! RenderSettingsCellWithBorder
             let item = rowItems[indexPath.row]
             cell.setDataToRow(data: item.name)
             return cell
         } else if indexPath.row == 7 {
             let cell = Bundle.main.loadNibNamed("RenderSettingsSwitchCell", owner: self, options: nil)?.first as! RenderSettingsSwitchCell
-//        let item = rowItems[indexPath.row]
-//        cell.setDataToRow(data: item.name)
+            return cell
+        } else if indexPath.row == 8 {
+            let cell = Bundle.main.loadNibNamed("RenderSettingsCellWithBorder", owner: self, options: nil)?.first as! RenderSettingsCellWithBorder
+            let item = rowItems[indexPath.row]
+            cell.setDataToRow(data: item.name)
             return cell
         }
         return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if indexPath.row == 7 {
-            let cell = tableView.cellForRow(at: indexPath) as! RenderSettingsSwitchCell
-            cell.setSelected(false, animated: true)
-//        }
-        
         print("You tapped cell number \(indexPath.row).")
     }
     

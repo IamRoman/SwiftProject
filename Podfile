@@ -8,4 +8,5 @@ target 'First_app' do
   # Pods for First_app
   pod 'Alamofire', '~> 4.7'
   pod 'RealmSwift'
+  pod 'DLRadioButton', '~> 1.4'
 end

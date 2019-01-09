@@ -38,11 +38,19 @@ class HelpersForUIView: NSObject {
         image.clipsToBounds = true;
     }
     
-    static func drawBlackBorder(view: UIView) {
-        view.layer.borderColor = UIColor.black.cgColor
-        view.layer.borderWidth = 1.0
+    static func drawCircle(view: UIView, borderColor: UIColor, bodyColor: UIColor) {
+        let circleWidth = 28
+        let myNewView = UIView(frame: CGRect(x: -5, y: -5, width: circleWidth, height: circleWidth))
+        myNewView.backgroundColor = UIColor.clear
+        myNewView.layer.cornerRadius = CGFloat(circleWidth/2)
+        myNewView.layer.borderWidth = 3
+        myNewView.layer.borderColor = UIColor.blue.cgColor
+        view.addSubview(myNewView)
+        
+//        view.layer.borderColor = borderColor.cgColor
+//        view.layer.borderWidth = 3.0
         
         view.layer.cornerRadius = view.frame.size.width/2.0
-        view.backgroundColor = UIColor.brown
+        view.backgroundColor = bodyColor
     }
 }

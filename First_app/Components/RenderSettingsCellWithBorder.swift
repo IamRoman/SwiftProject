@@ -20,6 +20,8 @@ class RenderSettingsCellWithBorder: UITableViewCell {
         super.setSelected(selected, animated: animated)
         contentContainerView.layer.addBorder(edge: .top, color: UIColor.lightGray, thickness: 1)
         contentContainerView.layer.addBorder(edge: .bottom, color: UIColor.lightGray, thickness: 1)
+        super.selectionStyle = .none
+        super.isUserInteractionEnabled = false
     }
     
     func setDataToRow(data: String) {
